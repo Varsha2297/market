@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KisanBazar</title>
+<link rel = "icon" href =  
+"C:\Users\patel\Desktop\x.png" type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+	* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 50px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+	 body {
+  font-family: Alegreya;
+  text-align: center;
+  background-color: #f4f7ed;
+  margin: 0;
+}
+	/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #556B2F;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.left{
+  float: left;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.google_translate_element {
+   position: absolute;
+   left: 5px;
+   z-index: 1;
+ }
+.text{
+	text-align: left;
+	font-size: 25px;
+	color: grey;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: #556B2F;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+
+}
+
+.button:hover {
+  background-color: white;
+}
+
+</style>
+</head>
+<body>
+ 
+  <div id="google_translate_element"></div>  
+      
+    <script type="text/javascript">  
+        function googleTranslateElementInit() {  
+            new google.translate.TranslateElement( 
+                {pageLanguage: 'en'},  
+                'google_translate_element' 
+            );  
+        }  
+    </script>  
+      
+    <script type="text/javascript"src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> 
+    </script>  
+<div class="navbar">
+  <a href="#" class="left">KisanBazar</a>
+</div>
+
+
+<div class="row">
+  <div class="column left" style="background-color:#f4f7ed;">
+    <img src="C:\Users\patel\Desktop\dal.jpg" width="500" height="400" align="center">
+    <h2>Dal</h2>
+  </div>
+  <div class="column right" style="background-color:#f4f7ed;">
+  	<h2>Dal</h2>
+  	<div class="text">
+    	<p>Type : Chana Dal 
+    	<br>Color : Yellow
+        <br>Quantity Expected : 50 Tonn
+        <br>Quanlity Expected :  A Grade
+        <br>Price : Rs. 70.00 - 88.00 / Kg</p>
+        <form action="#">
+      <label for="feedback">Give Your Feedback :</label><br>
+      <input type="text" id="feedback" feedback="feedback" value="type.."><br>
+      <input class="button" type="submit" value="Submit">
+    </form> 
+        <p><button class="button">Order</button></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
